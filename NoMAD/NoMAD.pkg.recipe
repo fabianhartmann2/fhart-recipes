@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release version of NoMAD and extracts the installer package. Recipe provided by Rich Trouton.</string>
+	<string>Downloads the current release version of NoMAD and adds a pre-/post-isntall script to unload NoMAD if used with a LaunchAgent.</string>
 	<key>Identifier</key>
 	<string>com.fabianhartmann.pkg.NoMAD</string>
 	<key>Input</key>
@@ -103,6 +103,18 @@
 								</array>
 						</dict>
 				</dict>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>path_list</key>
+				<array>
+					<string>%RECIPE_CACHE_DIR%/unpack</string>
+					<string>%pkgroot%</string>
+				</array>
+			</dict>
+			<key>Processor</key>
+			<string>PathDeleter</string>
 		</dict>
 	</array>
 </dict>

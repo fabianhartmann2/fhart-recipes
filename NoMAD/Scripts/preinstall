@@ -24,10 +24,6 @@
 SCRIPT_NAME=`basename "${0}"`
 SCRIPT_PATH=`dirname "${0}"`
 loggedInUser=$(python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')
-# Name of the Log File
-logfilename="$SCRIPT_NAME"
-# Log to a File if true
-logtofile="false"
 
 su $loggedInUser -c "launchctl unload /Library/LaunchAgents/com.trusourcelabs.NoMAD.plist"
 

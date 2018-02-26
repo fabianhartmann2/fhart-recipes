@@ -4,10 +4,8 @@
 <dict>
     <key>Description</key>
     <string>Downloads NoMAD</string>
-
     <key>Identifier</key>
     <string>com.fabianhartmann.download.NoMAD</string>
-
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -41,7 +39,7 @@
                 <array>
                 	<string>Developer ID Installer: Joel Rennich (AAPZK3CB24)</string>
                 	<string>Developer ID Certification Authority</string>
-            		<string>Apple Root CA</string>
+            		  <string>Apple Root CA</string>
             	</array>
             </dict>
         </dict>
