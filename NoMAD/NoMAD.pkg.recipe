@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of NoMAD and extracts the installer package. Recipe provided by Rich Trouton.</string>
 	<key>Identifier</key>
-	<string>com.github.fabianhartmann.NoMAD.pkg</string>
+	<string>com.github.fabianhartmann.pkg.NoMAD</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fabianhartmann.NoMAD.download</string>
+	<string>com.github.fabianhartmann.download.NoMAD</string>
 	<key>Process</key>
 	<array>
 		<dict>

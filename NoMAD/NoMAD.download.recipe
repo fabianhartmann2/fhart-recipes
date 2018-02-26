@@ -6,7 +6,7 @@
     <string>Downloads NoMAD</string>
 
     <key>Identifier</key>
-    <string>com.github.fabianhartmann.NoMAD.download</string>
+    <string>com.github.fabianhartmann.download.NoMAD</string>
 
     <key>Input</key>
     <dict>
