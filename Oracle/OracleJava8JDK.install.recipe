@@ -11,8 +11,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Oracle_Java_SE_Development_Kit_8fhhfbulvdlvfuiicrifvvjnhtcrftdnb
-        </string>
+        <string>Oracle_Java_SE_Development_Kit_8</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
@@ -30,6 +29,17 @@
             </dict>
         </dict>
         <dict>
+              <key>Processor</key>
+              <string>FlatPkgUnpacker</string>
+              <key>Arguments</key>
+              <dict>
+                  <key>destination_path</key>
+                  <string>%RECIPE_CACHE_DIR%/expanded/applet</string>
+                  <key>flat_pkg_path</key>
+                  <string>%RECIPE_CACHE_DIR%/expanded/javaappletplugin.pkg</string>
+              </dict>
+          </dict>
+        <dict>
             <key>Processor</key>
             <string>PkgPayloadUnpacker</string>
             <key>Arguments</key>
@@ -37,7 +47,7 @@
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/unpack</string>
                 <key>pkg_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/expanded/Manifest.pkg/Payload</string>
+                <string>%RECIPE_CACHE_DIR%/expanded/applet/Manifest.pkg/Payload</string>
             </dict>
         </dict>
       <dict>
@@ -46,7 +56,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/Library/JavaAppletPlugin.plugin/Contents/Info.plist</string>
+                <string>%RECIPE_CACHE_DIR%/unpack/Library/JavaAppletPlugin.plugin/Contents/Enabled.plist</string>
                 <key>plist_version_key</key>
                 <string>CFBundleShortVersionString</string>
             </dict>
