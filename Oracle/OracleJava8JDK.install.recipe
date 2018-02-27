@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Java 8 JDK from Oracle and creates a PKG.</string>
+    <key>Identifier</key>
+    <string>com.fabianhartmann.pkg.OracleJDK8</string>
+    <key>ParentRecipe</key>
+    <string>com.fabianhartmann.download.OracleJDK8</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Oracle_Java_SE_Development_Kit_8fhhfbulvdlvfuiicrifvvjnhtcrftdnb
+        </string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.4.0</string>
+    <key>Process</key>
+    <array>
+      <dict>
+            <key>Processor</key>
+            <string>FlatPkgUnpacker</string>
+            <key>Arguments</key>
+            <dict>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/expanded</string>
+                <key>flat_pkg_path</key>
+                <string>%pathname%/JDK 8 Update *.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgPayloadUnpacker</string>
+            <key>Arguments</key>
+            <dict>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack</string>
+                <key>pkg_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/expanded/Manifest.pkg/Payload</string>
+            </dict>
+        </dict>
+      <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/Library/JavaAppletPlugin.plugin/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleShortVersionString</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgCopier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+                <key>source_pkg</key>
+                <string>%pathname%/JDK 8 Update *.pkg</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
