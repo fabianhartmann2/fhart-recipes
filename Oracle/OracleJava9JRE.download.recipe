@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Java 7 JDK from Oracle.</string>
+    <string>Download the latest JRE 9 from Oracle.</string>
     <key>Identifier</key>
-    <string>com.github.hansen-m.download.OracleJava7JDK</string>
+    <string>com.fabianhartmann.download.OracleJRE9</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>OracleJava7JDK</string>
+        <string>Java_SE_Runtime_Environment_9</string>
         <key>SEARCH_URL</key>
-        <string>http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</string>
+        <string>http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html</string>
         <key>SEARCH_PATTERN</key>
-        <string>(?P&lt;url&gt;http://download.oracle.com/otn-pub/java/jdk/.*?/jdk-7u[0-9]?[0-9]?-macosx-x64.dmg)</string>
+        <string>(?P&lt;url&gt;http://download.oracle.com/otn-pub/java/jdk/.*?/jre-9.*?x64_bin.dmg)</string>
         <key>ORACLE_LICENSE_COOKIE</key>
         <string>oraclelicense=accept-securebackup-cookie</string>
     </dict>
@@ -58,13 +58,9 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%pathname%/JDK 7 Update *.pkg</string>
-                <key>expected_authority_names</key>
-                <array>
-                    <string>Developer ID Installer: Oracle America, Inc.</string>
-                    <string>Developer ID Certification Authority</string>
-                    <string>Apple Root CA</string>
-                </array>
+                <string>%pathname%/Java 9*.app</string>
+                <key>requirement</key>
+                <string>anchor apple generic and certificate leaf[subject.OU] = "VB5E2TV963"</string>
             </dict>
         </dict>
     </array>
