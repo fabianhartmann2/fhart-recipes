@@ -39,7 +39,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>source_path</key>
-				<string>./com.trusourcelabs.NoMAD.plist</string>
+				<string>%RECIPE_DIR%/com.trusourcelabs.NoMAD.plist</string>
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Library/LaunchAgents</string>
 			</dict>
