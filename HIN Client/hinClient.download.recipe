@@ -15,7 +15,7 @@
         <key>SEARCH_URL</key>
         <string>https://www.hin.ch/download/</string>
         <key>SEARCH_PATTERN</key>
-        <string>(https://download.hin.ch/download/distribution/install/.*?/HINClient_macos.*?.dmg)</string>
+        <string>(https://download.hin.ch/download/distribution/install/.*?+/HINClient_macos.*?+.dmg)</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
