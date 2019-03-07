@@ -10,8 +10,6 @@
 	<dict>
     <key>NAME</key>
     <string>HIN_HIN-Client</string>
-    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-    <string>true</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
@@ -25,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/downoads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
+                <string>%pathname%/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/downoads/HIN Client 2.pkg</string>
             </dict>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Download the latest HIN Client</string>
     <key>Identifier</key>
-    <string>com.fabianhartmann.download.hinClient2</string>
+    <string>com.fabianhartmann.download.hinClient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -44,15 +44,8 @@
             </dict>
         </dict>
         <dict>
-                <key>Processor</key>
-                <string>Copier</string>
-                <key>Arguments</key>
-                <dict>
-                    <key>source_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downoads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
-                    <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downoads/HIN Client 2.pkg</string>
-                </dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
         </dict>
         <dict>
             <key>Processor</key>
