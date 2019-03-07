@@ -10,8 +10,6 @@
     <dict>
         <key>NAME</key>
         <string>HIN_HIN-Client</string>
-        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-        <string>true</string>
         <key>SEARCH_URL</key>
         <string>https://www.hin.ch/download/</string>
         <key>SEARCH_PATTERN</key>
