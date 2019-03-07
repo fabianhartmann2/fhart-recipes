@@ -10,8 +10,8 @@
 	<dict>
     <key>NAME</key>
     <string>HIN_HIN-Client</string>
-    <key>FAIL_RECIPES_WITHOUT_TRUST_INFO</key>
-    <string>no</string>
+    <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+    <string>true</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
@@ -29,7 +29,22 @@
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/downoads/HIN Client 2.pkg</string>
             </dict>
+    </dict>
+    <dict>
+        <key>Processor</key>
+        <string>CodeSignatureVerifier</string>
+        <key>Arguments</key>
+        <dict>
+            <key>input_path</key>
+            <string>%pathname%/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
+            <key>expected_authority_names</key>
+            <array>
+                <string>Developer ID Installer: Health Info Net AG (FC5A537NX2)</string>
+                <string>Developer ID Certification Authority</string>
+                <string>Apple Root CA</string>
+            </array>
         </dict>
+    </dict>
 	</array>
 </dict>
 </plist>
