@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#title          :postinstall.sh
+#description    :Preinstall Script for HIN Client 1
+#author         :Fabian Hartmann
+#date           :2019-03-19
+#version        :0.1
+#usage          :./postinstall.sh
+#notes          :
+#bash_version   :
+#============================================================================
+
+
+
+#============================================================================
+### Revision History:
+##
+##	Date	Version			Personnel			Notes
+##	----	-------			----------------	-----
+##	2019-03-19	0.1			Fabian Hartmann Script created
+##
+#============================================================================
+#
+SCRIPT_NAME=`basename "${0}"`
+SCRIPT_PATH=`dirname "${0}"`
+loggedInUser=$(python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')
+
+sudo  "/tmp/HIN Client Installationsprogramm.app/Contents/MacOS/JavaApplicationStub" -q
