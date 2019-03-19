@@ -49,9 +49,9 @@
             <key>Arguments</key>
             <dict>
                 <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
                 <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/HIN Client 2.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
             </dict>
         </dict>
         <dict>
@@ -60,7 +60,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/HIN Client 2.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
                 <key>expected_authority_names</key>
                 <array>
                     <string>Developer ID Installer: Health Info Net AG (FC5A537NX2)</string>
