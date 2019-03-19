@@ -33,29 +33,15 @@
 					</dict>
 			</dict>
 			<dict>
-					<key>Processor</key>
-					<string>PkgRootCreator</string>
-					<key>Arguments</key>
-					<dict>
-							<key>pkgroot</key>
-							<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-							<key>pkgdirs</key>
-							<dict>
-									<key>Applications</key>
-									<string>0775</string>
-							</dict>
-					</dict>
-			</dict>
-			<dict>
 				<key>Arguments</key>
 				<dict>
-					<key>destination_path</key>
-					<string>%pkgroot%</string>
-					<key>pkg_payload_path</key>
+					<key>extract_root</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+					<key>pkg_path</key>
 					<string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
 				</dict>
 				<key>Processor</key>
-				<string>PkgPayloadUnpacker</string>
+				<string>PkgExtractor</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
