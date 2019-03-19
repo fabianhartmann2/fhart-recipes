@@ -62,6 +62,32 @@
                 </array>
             </dict>
         </dict>
+        <dict>
+                <key>Processor</key>
+                <string>Copier</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>source_path</key>
+                    <string>%pathname%/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
+                    <key>destination_path</key>
+                    <string>%RECIPE_CACHE_DIR%/downoads/HIN Client 2.pkg</string>
+                </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_path</key>
+                <string>%RECIPE_CACHE_DIR%/downoads/HIN Client 2.pkg</string>
+                <key>expected_authority_names</key>
+                <array>
+                    <string>Developer ID Installer: Health Info Net AG (FC5A537NX2)</string>
+                    <string>Developer ID Certification Authority</string>
+                    <string>Apple Root CA</string>
+                </array>
+            </dict>
+        </dict>
     </array>
 </dict>
 </plist>
