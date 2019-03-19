@@ -51,7 +51,7 @@
                 <key>source_path</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
                 <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/HIN_HINClient-2.pkg</string>
             </dict>
         </dict>
         <dict>
