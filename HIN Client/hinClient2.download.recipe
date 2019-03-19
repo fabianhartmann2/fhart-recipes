@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download the latest HIN Client</string>
+    <string>Download the latest HIN Client 2</string>
     <key>Identifier</key>
     <string>com.fabianhartmann.download.hinClient2</string>
     <key>Input</key>
