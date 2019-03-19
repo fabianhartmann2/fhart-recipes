@@ -44,72 +44,20 @@
             </dict>
         </dict>
         <dict>
-    				<key>Processor</key>
-    				<string>PkgRootCreator</string>
-    				<key>Arguments</key>
-    				<dict>
-    						<key>pkgroot</key>
-    						<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-    						<key>pkgdirs</key>
-    						<dict>
-    								<key>tmp</key>
-    								<string>0775</string>
-    						</dict>
-    				</dict>
-    		</dict>
-				<dict>
             <key>Processor</key>
-            <string>Copier</string>
+            <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
             <dict>
-                <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client Installationsprogramm.app</string>
-                <key>destination_path</key>
-                <string>%pkgroot%/tmp/HIN Client Installationsprogramm.app</string>
+                <key>input_path</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Install HIN Client.app/Contents/Resources/HIN Client 2.pkg</string>
+                <key>expected_authority_names</key>
+                <array>
+                    <string>Developer ID Installer: Health Info Net AG (FC5A537NX2)</string>
+                    <string>Developer ID Certification Authority</string>
+                    <string>Apple Root CA</string>
+                </array>
             </dict>
         </dict>
-        <dict>
-    			<key>Arguments</key>
-    			<dict>
-    				<key>input_plist_path</key>
-    				<string>%pkgroot%/tmp/HIN Client Installationsprogramm.app/Contents/Info.plist</string>
-    				<key>plist_version_key</key>
-    				<string>CFBundleShortVersionString</string>
-    			</dict>
-    			<key>Processor</key>
-    			<string>Versioner</string>
-    		</dict>
-        <dict>
-    				<key>Processor</key>
-    				<string>PkgCreator</string>
-    				<key>Arguments</key>
-    				<dict>
-    						<key>pkgname</key>
-    						<string>%NAME%-%version%</string>
-    						<key>pkg_request</key>
-    						<dict>
-    								<key>pkgdir</key>
-    								<string>%RECIPE_CACHE_DIR%</string>
-    								<key>id</key>
-    								<string>ch.hin.hinclient.pkg</string>
-    								<key>options</key>
-    								<string>purge_ds_store</string>
-    								<key>scripts</key>
-    								<string>Scripts</string>
-    								<key>chown</key>
-    								<array>
-    										<dict>
-    												<key>path</key>
-    												<string>tmp</string>
-    												<key>user</key>
-    												<string>root</string>
-    												<key>group</key>
-    												<string>wheel</string>
-    										</dict>
-    								</array>
-    						</dict>
-    				</dict>
-    		</dict>
     </array>
 </dict>
 </plist>
