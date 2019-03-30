@@ -43,6 +43,19 @@
 				<key>Processor</key>
 				<string>FlatPkgUnpacker</string>
 			</dict>
+      <dict>
+				<key>Arguments</key>
+				<dict>
+          <key>purge_destination</key>
+          <true/>
+					<key>pkg_payload_path</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%/Payload</string>
+					<key>pkg_payload_path</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%/extractedpayload</string>
+				</dict>
+				<key>Processor</key>
+				<string>PkgPayloadUnpacker</string>
+			</dict>
 			<dict>
 				<key>Arguments</key>
 				<dict>
