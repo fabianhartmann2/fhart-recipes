@@ -35,15 +35,13 @@
 			<dict>
 				<key>Arguments</key>
 				<dict>
-					<key>purge_destination</key>
-					<true/>
-					<key>destination_path</key>
+					<key>extract_root</key>
 					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-					<key>pkg_payload_path</key>
+					<key>pkg_path</key>
 					<string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
 				</dict>
 				<key>Processor</key>
-				<string>PkgPayloadUnpacker</string>
+				<string>PkgExtractor</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
