@@ -96,11 +96,14 @@
       <dict>
 					<key>Processor</key>
 					<string>PathDeleter</string>
-					<key>path_list</key>
-					<array>
-            <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
-            <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-          </array>
+          <key>Arguments</key>
+          <dict>
+            <key>path_list</key>
+  					<array>
+              <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
+              <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+            </array>
+          </dict>
 			</dict>
     </array>
 </dict>
