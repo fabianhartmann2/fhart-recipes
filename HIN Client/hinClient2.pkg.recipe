@@ -102,6 +102,7 @@
   					<array>
               <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
               <string>%RECIPE_CACHE_DIR%/%NAME%/</string>
+              <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
             </array>
           </dict>
 			</dict>
