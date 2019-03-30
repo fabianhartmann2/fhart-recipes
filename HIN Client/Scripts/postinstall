@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #title          :postinstall.sh
-#description    :Preinstall Script for HIN Client 1
+#description    :Postinstall Script for HIN Client 1
 #author         :Fabian Hartmann
 #date           :2019-03-19
 #version        :0.1
