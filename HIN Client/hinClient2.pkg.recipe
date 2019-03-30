@@ -11,7 +11,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>HIN_HIN-Client</string>
+        <string>HIN_HIN-Client2</string>
         <key>SEARCH_URL</key>
         <string>https://www.hin.ch/download/</string>
         <key>SEARCH_PATTERN</key>
@@ -75,7 +75,7 @@
 							<key>source_path</key>
 							<string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
 							<key>destination_path</key>
-							<string>%RECIPE_CACHE_DIR%/downloads/HIN_HINClient2-%version%.pkg</string>
+							<string>%RECIPE_CACHE_DIR%/downloads/HIN_HINClient-%version%.pkg</string>
 					</dict>
 			</dict>
 			<dict>
@@ -84,7 +84,7 @@
 					<key>Arguments</key>
 					<dict>
 							<key>input_path</key>
-							<string>%RECIPE_CACHE_DIR%/downloads/HIN_HINClient2-%version%.pkg</string>
+							<string>%RECIPE_CACHE_DIR%/downloads/HIN_HINClient-%version%.pkg</string>
 							<key>expected_authority_names</key>
 							<array>
 									<string>Developer ID Installer: Health Info Net AG (FC5A537NX2)</string>
@@ -95,7 +95,7 @@
 			</dict>
       <dict>
 					<key>Processor</key>
-					<string>Copier</string>
+					<string>PathDeleter</string>
 					<key>path_list</key>
 					<array>
             <string>%RECIPE_CACHE_DIR%/downloads/HIN Client 2.pkg</string>
