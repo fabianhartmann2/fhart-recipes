@@ -42,7 +42,7 @@
                 <key>strict_verification</key>
                 <false/>
                 <key>requirement</key>
-                <string>(identifier "Cisco-Systems.Spark")</string>
+                <string>(identifier "com.cisco.Cisco Webex Meetings")</string>
             </dict>
         </dict>
     </array>
