@@ -86,7 +86,7 @@
                     <key>source_path</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%/ClickShare_Setup.dmg/ClickShare.app</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/</string>
                     <key>purge_destination</key>
                     <true/>
                 </dict>
@@ -99,7 +99,7 @@
                     <key>source_path</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%/ClickShare_Setup.dmg/Soundflower.pkg</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/</string>
                     <key>purge_destination</key>
                     <true/>
                 </dict>
