@@ -76,7 +76,7 @@
             <key>pkgroot</key>
             <string>%pkgroot%</string>
             <key>pkgdir</key>
-            <string>%RECIPE_CACHE_DIR%</string>
+            <string>%RECIPE_CACHE_DIR%/downloads</string>
             <key>pkgname</key>
             <string>%VENDOR%_%NAME%-%version%</string>
             <key>id</key>
@@ -94,6 +94,7 @@
           <key>path_list</key>
           <array>
             <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+            <string>%RECIPE_CACHE_DIR%/downloads/ClickShare_Setup.dmg</string>
           </array>
         </dict>
         <key>Processor</key>
