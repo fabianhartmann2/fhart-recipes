@@ -83,6 +83,17 @@
             <dict>
                 <key>Arguments</key>
                 <dict>
+                    <key>path_list</key>
+                    <array>
+                        <string>%RECIPE_CACHE_DIR%/%NAME%/*ApplicationSw</string>
+                    </array>
+                </dict>
+                <key>Processor</key>
+                <string>PathDeleter</string>
+            </dict>
+            <dict>
+                <key>Arguments</key>
+                <dict>
                     <key>source_path</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%/ClickShare_Setup.dmg/ClickShare.app</string>
                     <key>destination_path</key>
