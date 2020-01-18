@@ -59,6 +59,32 @@
             <dict>
                 <key>Arguments</key>
                 <dict>
+                    <key>source_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg/ClickShare.app</string>
+                    <key>destination_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <key>purge_destination</key>
+                    <true/>
+                </dict>
+                <key>Processor</key>
+                <string>Copier</string>
+            </dict>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>source_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg/Soundflower.pkg</string>
+                    <key>destination_path</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                    <key>purge_destination</key>
+                    <true/>
+                </dict>
+                <key>Processor</key>
+                <string>Copier</string>
+            </dict>
+            <dict>
+                <key>Arguments</key>
+                <dict>
                     <key>path_list</key>
                     <array>
                         <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.zip</string>
@@ -70,19 +96,8 @@
             <dict>
                 <key>Arguments</key>
                 <dict>
-                    <key>path_list</key>
-                    <array>
-                        <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg</string>
-                    </array>
-                </dict>
-                <key>Processor</key>
-                <string>DmgMounter</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
                     <key>input_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg/ClickShare.app</string>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/ClickShare.app</string>
                     <key>expected_authority_names</key>
                     <array>
                         <string>Developer ID Installer: Barco NV (P6CDJZR997)</string>
