@@ -70,6 +70,17 @@
             <dict>
                 <key>Arguments</key>
                 <dict>
+                    <key>path_list</key>
+                    <array>
+                        <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg</string>
+                    </array>
+                </dict>
+                <key>Processor</key>
+                <string>DmgMounter</string>
+            </dict>
+            <dict>
+                <key>Arguments</key>
+                <dict>
                     <key>input_path</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%/R*/ClickShare_Setup.dmg/ClickShare.app</string>
                     <key>expected_authority_names</key>
