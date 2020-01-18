@@ -25,7 +25,7 @@
               <key>Arguments</key>
               <dict>
                   <key>pkgroot</key>
-                  <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                  <string>%RECIPE_CACHE_DIR%/%NAME%/ROOT</string>
                   <key>pkgdirs</key>
                   <dict>
                       <key>Applications</key>
@@ -50,7 +50,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>input_plist_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%/Applications/ClickShare.app/Contents/Info.plist</string>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/ROOT/Applications/ClickShare.app/Contents/Info.plist</string>
                 </dict>
                 <key>Processor</key>
                 <string>Versioner</string>
@@ -63,7 +63,7 @@
                     <key>pkg_request</key>
                     <dict>
                         <key>pkgroot</key>
-                        <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                        <string>%pkgroot%</string>
                         <key>pkgdir</key>
                         <string>%RECIPE_CACHE_DIR%</string>
                         <key>pkgname</key>
