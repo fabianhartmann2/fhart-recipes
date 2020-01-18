@@ -107,7 +107,7 @@
                     <string>%RECIPE_CACHE_DIR%/%NAME%/ClickShare_Setup.dmg/ClickShare.app</string>
                     <key>expected_authority_names</key>
                     <array>
-                        <string>Developer ID Installer: Barco NV (P6CDJZR997)</string>
+                        <string>Developer ID Application: Barco NV (P6CDJZR997)</string>
                         <string>Developer ID Certification Authority</string>
                         <string>Apple Root CA</string>
                     </array>
