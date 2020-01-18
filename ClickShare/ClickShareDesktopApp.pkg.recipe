@@ -47,14 +47,21 @@
         <string>Copier</string>
       </dict>
       <dict>
+          <key>Arguments</key>
+          <dict>
+              <key>input_plist_path</key>
+              <string>%RECIPE_CACHE_DIR%/%NAME%/ROOT/Applications/ClickShare.app/Contents/Info.plist</string>
+          </dict>
+          <key>Processor</key>
+          <string>Versioner</string>
+      </dict>
+      <dict>
         <key>comment</key>
         <string>Their version number is messed up so we need to use this for now. Also, trimming the build number off the end of the version because otherwise you get: Error: Invalid version component "0-12"</string>
         <key>Processor</key>
         <string>com.github.homebysix.VersionSplitter/VersionSplitter</string>
         <key>Arguments</key>
         <dict>
-          <key>version</key>
-          <string>%RECIPE_CACHE_DIR%/%NAME%/ROOT/Applications/ClickShare.app/Contents/Info.plist</string>
           <key>split_on</key>
           <string>-</string>
         </dict>
