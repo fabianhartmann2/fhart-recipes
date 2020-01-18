@@ -78,7 +78,7 @@
             <key>pkgdir</key>
             <string>%RECIPE_CACHE_DIR%</string>
             <key>pkgname</key>
-            <string>%NAME%</string>
+            <string>%VENDOR%_%NAME%-%version%</string>
             <key>id</key>
             <string>%PKG_ID%</string>
             <key>version</key>
