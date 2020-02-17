@@ -41,8 +41,12 @@
                 <string>%pathname%/Webex Teams.app</string>
                 <key>strict_verification</key>
                 <false/>
-                <key>requirement</key>
-                <string>(identifier "com.cisco.Cisco Webex Meetings")</string>
+                <key>expected_authority_names</key>
+                <array>
+                	<string>Developer ID Installer: Joel Rennich (AAPZK3CB24)</string>
+                	<string>Developer ID Certification Authority</string>
+            		  <string>Apple Root CA</string>
+            	</array>
             </dict>
         </dict>
     </array>
