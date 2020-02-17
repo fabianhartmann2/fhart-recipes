@@ -25,4 +25,7 @@ SCRIPT_NAME=`basename "${0}"`
 SCRIPT_PATH=`dirname "${0}"`
 loggedInUser=$(python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')
 
+chmod 755 /Library/LaunchAgents/com.barco.clicksharelauncher.plist
+chown root:wheel /Library/LaunchAgents/com.barco.clicksharelauncher.plist
+
 su $loggedInUser -c "launchctl load /Library/LaunchAgents/com.barco.clicksharelauncher.plist"
